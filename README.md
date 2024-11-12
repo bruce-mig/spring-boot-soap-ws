@@ -16,3 +16,10 @@ SOAP API app to evaluate loan eligibility for customers using Contract First App
 - isEligible for loan
 - Approved Amount
 - Mismatch Criteria
+
+
+### WSDL file
+
+Wed Services Description Language
+
+![WSDL](wsdl-file.png)
