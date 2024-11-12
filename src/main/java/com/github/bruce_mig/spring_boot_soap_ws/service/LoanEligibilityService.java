@@ -17,7 +17,7 @@ public class LoanEligibilityService {
             acknowledgement.setApprovedAmount(0);
             acknowledgement.setIsEligible(false);
         } else {
-            acknowledgement.setApprovedAmount(5000);
+            acknowledgement.setApprovedAmount(request.getRequestedAmount());
             acknowledgement.setIsEligible(true);
             mismatchList.clear();
         }
@@ -32,11 +32,11 @@ public class LoanEligibilityService {
             mismatchList.add("Person age should be between 30 to 60");
         }
 
-        if (!(request.getYearlyIncome() > 3000)) {
+        if (request.getYearlyIncome() < 3000) {
             mismatchList.add("Minimum yearly income should be more than USD$3000");
         }
 
-        if (!(request.getYearlyIncome() > 500)) {
+        if (request.getCibilScore() < 500) {
             mismatchList.add("Low Credit score, please try again after 6 months");
         }
         return mismatchList;
