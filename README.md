@@ -29,6 +29,6 @@ SOAP API app to evaluate loan eligibility for customers using Contract First App
 
 ### WSDL file
 
-Wed Services Description Language
+Web Services Description Language
 
 ![WSDL](wsdl-file.png)
