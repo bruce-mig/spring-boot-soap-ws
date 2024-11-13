@@ -83,7 +83,7 @@
 					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
 					<sources>
-						<source>${project.basedir}/src/main/resources/xsd/loaneligibility.xsd</source>
+						<source>${project.basedir}/src/main/resources/loaneligibility.xsd</source>
 					</sources>
 				</configuration>
 			</plugin>
